@@ -4,14 +4,14 @@
 
 /* ---------- 1. Palette & fonts (custom properties) ---------- */
 :root {
-  --ink: #1e1b16;         /* near-black text */
-  --charcoal: #2b2620;    /* sidebar background */
-  --cream: #f6f1e7;       /* page background */
-  --panel: #ffffff;       /* content panel background */
-  --copper: #b05c3b;      /* primary accent */
-  --copper-soft: #e9d6c8; /* light accent tint */
-  --line: #e4ddcd;        /* borders */
-  --muted: #7a7266;       /* secondary text */
+  --ink: #1e1b16;
+  --charcoal: #2b2620;
+  --cream: #f6f1e7;
+  --panel: #ffffff;
+  --copper: #b05c3b;
+  --copper-soft: #e9d6c8;
+  --line: #e4ddcd;
+  --muted: #7a7266;
 }
 
 /* ---------- 2. Element selectors ---------- */
@@ -44,12 +44,12 @@ a { color: inherit; text-decoration: none; }
 /* ---------- 3. Layout: sidebar (ID selector) + content grid ---------- */
 body {
   display: grid;
-  grid-template-columns: 260px 1fr;   /* DISPLAY: grid, two-column app shell */
+  grid-template-columns: 260px 1fr;
   min-height: 100vh;
 }
 
 #site-nav {
-  position: sticky;      /* POSITIONING: sticky sidebar follows scroll */
+  position: sticky;
   top: 0;
   height: 100vh;
   background: var(--charcoal);
@@ -104,7 +104,6 @@ body {
   word-break: break-all;
 }
 
-/* Mobile nav toggle button (hidden on desktop) */
 #menu-toggle {
   display: none;
   position: fixed;
@@ -138,7 +137,7 @@ body {
 
 .panel {
   padding: 2.5rem 0;
-  border-bottom: 1px solid var(--line);   /* BORDER: section separator */
+  border-bottom: 1px solid var(--line);
 }
 
 .panel:last-of-type {
@@ -167,8 +166,8 @@ body {
 }
 
 .tag {
-  text-transform: uppercase;      /* TEXT FORMATTING */
-  letter-spacing: 0.2em;          /* TEXT FORMATTING */
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
   font-size: 0.75rem;
   font-weight: 600;
   color: var(--copper);
@@ -189,14 +188,14 @@ body {
 
 .quick-facts {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);   /* DISPLAY: grid for fact cells */
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
   margin: 0 0 2rem 0;
   padding: 1.5rem;
   background: var(--panel);
   border: 1px solid var(--line);
-  border-radius: 12px;                     /* BORDER-RADIUS */
-  box-shadow: 0 8px 22px rgba(30, 27, 22, 0.05); /* BOX-SHADOW */
+  border-radius: 12px;
+  box-shadow: 0 8px 22px rgba(30, 27, 22, 0.05);
 }
 
 .quick-facts dt {
@@ -222,7 +221,7 @@ body {
 .pill-btn {
   display: inline-block;
   padding: 0.7rem 1.5rem;
-  border-radius: 999px;                    /* BORDER-RADIUS: pill shape */
+  border-radius: 999px;
   font-weight: 600;
   font-size: 0.9rem;
   border: 2px solid var(--copper);
@@ -288,7 +287,7 @@ body {
 }
 
 .edu-body {
-  flex: 1;               /* fills remaining row space */
+  flex: 1;
 }
 
 .edu-body h3 {
@@ -521,7 +520,7 @@ body {
 
 @media (max-width: 720px) {
   body {
-    display: block;              /* drop the two-column shell on small screens */
+    display: block;
   }
 
   #menu-toggle {
